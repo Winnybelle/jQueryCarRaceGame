@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="race.css">
+    <script src="jquery-3.5.1.min.js"></script> 
+    <!-- <script src="//ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> -->
+
+      <title>Jquery Car Race Game</title>
+</head>
+<body >
+<div id="race">
+        <h1>jQuery Car Race 2.0</h1>
+        
+        <div class="b_inputs">
+        <input type="button" value="Start Race" id="go" >
+        <input type="button" value="Reset" id="reset">
+    </div>
+        
+        <div id="racetrack">
+            <img src="car1.png" alt="Green car" id="car1" class="car">
+            <img src="car2.png" alt="Red car" id="car2" class="car">
+        </div>
+        
+        <div id="raceInfoContainer" class="clearfix">
+            <h2>Results</h2>
+            <div id="raceInfo1" class="raceInfo">Car 1<span></span></div>
+            <div id="raceInfo2" class="raceInfo">Car 2<span></span></div>
+        </div>
+     </div>
+
+
+
+
+    
+        <!-- Load the CDN first -->
+        <!-- <script src="//code.jquery.com/jquery-3.5.1.min.js"></script> -->
+
+        <!-- If CDN fails to load, serve up the local version -->
+        <!-- <script>window.jQuery || document.write('<script src="js/jquery-3.5.1.js"><\/script>');</script> -->
+        
+        <script src="race.js"></script>
+
+</body>
+</html>

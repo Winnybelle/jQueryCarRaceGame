@@ -1,0 +1,87 @@
+body {
+    margin: 0;
+  }
+h1 {
+    text-align: center;
+}
+.b_inputs {
+    text-align: center;
+}
+  /***repeat track line to look like a road********/
+#racetrack {
+    background: url('car-road.jpeg') center left repeat-x;
+    height: 330px;
+    border-right: dashed 10px white;
+    box-sizing: border-box;
+    margin: 40px 0;
+}
+/***position set to relative bcause in jquery we will manipulate the position of the car,we wont be able to access the left property if position is not set to relative****/  
+.car {
+    display: block;
+    position: relative;
+    
+}
+/*****this styles car1 to the top and car2 to bottom since position is set to relative above this will be enabled****/
+#car1 { top: 30px;}
+#car2 { top: 100px; }
+
+/***creates a box for result*******/
+#raceInfoContainer {
+    width: 80%;
+    margin: 40px auto 0;
+    background: #333;
+    height: 200px;
+}
+/*******centers the h3 heading*****/
+#raceInfoContainer h2 {
+    color: white;
+    text-align: center;
+    text-transform: uppercase;
+    border-bottom: solid 1px white;
+    padding: 20px 0;
+}
+/******styles to layer text properly*****/
+.raceInfo {
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+    width: 50%;
+    float: left;
+    text-align: center;
+}
+
+/************where jquery automatically includes text***********/
+.raceInfo span {
+    display: block;
+    font-weight: normal;
+    font-size: 14px;
+    color: white;
+}
+
+/****car1 result info******/
+#raceInfo1 {
+    color: #77b82f;;
+}
+
+/****car1 result info******/
+#raceInfo2 {
+    color: #b82f3e;
+}
+
+input[type="button"] {
+    background: #77b72f;
+    color: white;
+    padding: 10px 20px;
+    border: solid 1px #444;
+}
+
+input#reset {
+    background: #fc3;
+    color: #444;
+}
+/*****to avoid float collapsing(good practice)******/
+.clearfix:after {
+    content:"";
+    display: table;
+    clear: both;
+}
